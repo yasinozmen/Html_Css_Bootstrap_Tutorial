@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>İlk Sayfam</title>
+  </head>
+
+  <body style="background-color: blanchedalmond">
+    <h1>HTML</h1>
+    <h2>CSS</h2>
+    <h3>JS</h3>
+    <h4 style="font-size: 50px; color: brown">Java</h4>
+    <br /><br />
+    <!-- <br> etiketi kursoru bir satır asagı indirir -->
+    <!-- style attribute ile verilen özellikler aslında css stillendirmeleridir
+    bu şekildeki stillendirmeye inline css denir -->
+    <h2 style="color: blueviolet">HTML NEDİR</h2>
+    <p>HTML Dersine Hoşgeldiniz..</p>
+    <!-- <p> otomatikman bir sonraki ifadenin bir sonraki  satıra yazılmasını saglar -->
+    <p style="color: blue">
+      Bugün <strong>HTML</strong> görmeye başladık. <em>HTML</em> bir
+      <del>programlama</del> dili değildir. Sadece bir
+      <mark style="color: chartreuse">işaretleme</mark>
+      dilidir.<!-- fosfor içine alır -->
+    </p>
+
+    <h style="color: red">LİSTE OLUŞTURMA</h>
+    <p>HTML'de liste oluşturmak için &ltol&gt &ltul&gt etiketleri kullanılır</p>
+    <ol type="i" start="3">
+      <!-- type ="1 ,A ,İ" başlangıc için ise star ="rakam" yazılır-->
+      <!-- Numaralı liste oluşturduk -->
+      <p>Numaralı liste oluşturmak için &ltul&gt etiketi kullanılır</p>
+      <li>Ahmet</li>
+      <li>Mehmet</li>
+      <li>İsmet</li>
+      <li>Saffet</li>
+    </ol>
+    <p>Maddeli liste oluşturmak için &ltul&gt etiketi kullanılır</p>
+    <ul type="circle">
+      <!-- disc square circle -->
+      <li>Adana</li>
+      <li>Urfa</li>
+      <li>Antep</li>
+    </ul>
+
+    <p>iç içe liste oluşturma</p>
+    <ol>
+      <li>
+        istanbul
+        <ul>
+          <li>fatih</li>
+          <li>üsküdar</li>
+          <li>esenyurt</li>
+        </ul>
+      </li>
+      <li>sakarya</li>
+      <ul>
+        <li>sapanca</li>
+        <li>serdivan</li>
+      </ul>
+    </ol>
+
+    <h2>LİNK VERME</h2>
+    <p>Link verme için &lta&gt kullanılır</p>
+    <a href="https://www.google.com.tr/" target="_blank">Google için tıkla</a>
+    <br />
+    <a href="gorseller.html" target="_blank">Gorseller için tıklayınız</a>
+    <!-- a gibi span gibi bazı etiketler inline dır boşluk bırakmaz-->
+    <br />
+    <a href="assets/img/1200px-Flag_of_Turkey.svg.png" target="_blank"
+      >Bayrak resmi için tıklayınız
+    </a>
+    <br />
+    <a href="mailto:iamyasinozmen@gmail.com">Mail için tıklayınız</a>
+    <br />
+    <a href="https://wa.me/05050680659">whatsappp için tıklayınız</a>
+    <a href="tel:+905050680659">Telefonla ara</a>
+  </body>
+</html>
