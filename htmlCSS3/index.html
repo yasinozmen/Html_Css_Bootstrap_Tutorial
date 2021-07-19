@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>formlar</title>
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+    <form action="kaydet.php">
+      <label class="label" for="ad">Adınız: </label>
+      <!-- label ustte oldugu icin isim giriniz kutusunun soluna yazar
+             alta koysak sagına yazar kutunun ustune koymak icin labelin yanına br koyarız-->
+      <input
+        class="giriş"
+        id="ad"
+        type="text"
+        name="adi"
+        value=""
+        maxlength="20"
+        placeholder="isim giriniz"
+      /><br />
+      <!-- labeldeki for ve inputtaki id aynı oldugunda 
+        Adınız yazısına basınca kutu aktif olur birbiine baglanır-->
+      <label class="label" for="sifre">sifreniz</label>
+      <input
+        class="giriş"
+        id="sifre"
+        type="password"
+        name="sifre"
+        value=""
+        required=""
+      /><br />
+      <!-- name ve value sudur value girilen deger name de servere name deki isimle gider adam derki sifre icinde girilen ver 3445 var mesela-->
+      <!-- required bos bırkılamaz demek uyarı verir-->
+      <!-- for id aynı olması diğerlerinde gerek yok name for mesela-->
+      <label class="label" for="email">e mail</label>
+      <input
+        class="giriş"
+        id="email"
+        type="email"
+        name="email"
+        value=""
+      /><br />
+      <label class="label" for="sayi">yasınız</label>
+      <input
+        class="giriş"
+        id="sayi"
+        type="number"
+        name="yas"
+        value=""
+        max="100"
+        min="0"
+      /><!-- artırma aksiltem cıkar yada rakam girebilirz metin girilmez
+        100 den fazla 0 dan az olamaz girilir ama submit yapınca kabul etmez-->
+      <br />
+        <label class="label" for="adres">Adres</label>
+      <textarea name="text-alanı" id="adres"  rows="10"></textarea> <br>
+
+      <button class="btn"  type="submit">
+        <i class="far fa-save"></i>Gönder</button>
+      <button class="btn" type="reset"><i class="fas fa-trash-alt"></i>Temizle</button>
+      
+    
+      
+    </form>
+  </body>
+</html>
