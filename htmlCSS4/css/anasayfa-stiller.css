@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+margin: 30px 20px; /* tek 30 yazsaydık her yerden30 verirdi  1. top 2. right 3.bottom 4.left tek tek yazmadan boylede yazabilirsin*/
+/* iki tane ayzarsan üst alt birinci sağ sol ikinci olarak algılar*/
+text-align: center;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color:black;
+  font-weight: bolder;
+    font-size: 20px;
+}
+.header{
+   
+    color: white;
+    background-color: red;
+    height: 50px;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+.nav{
+padding: 10px;
+background: rgb(86, 86, 221);
+
+}
+.aside{
+background: yellow;
+float: left;
+width: 25%;
+height: 70%;
+}
+.main{
+    width: 75%;
+    float: left;
+    height: 70%;
+    background-color: antiquewhite;
+
+}
+.footer{
+    background: rgb(116, 112, 112);
+    padding: 30px;
+}

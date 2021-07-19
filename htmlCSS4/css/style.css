@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: red;
+}
+
+img {
+  width: 20%;
+}
+
+.kutu {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 400px;
+  background: aquamarine; /* kuru 2 divde de ortak arka plan bu renk ama asagıda ortaya baska renk verdik son yazılan aktif olurwith de aynı sekilde*/
+}
+
+.kutu.orta {
+  background: wheat;
+  width: 100%;
+}
+.kutu.alt {
+  background-image: linear-gradient(rgb(149, 149, 201), gray);
+  width: 500px;
+}
+.kutu1{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    float: left;/*blok nesneleri yan yana dizmek için kullanılır */
+
+}
+.kutu1.sarı{
+    width: 40%;/*yan yana dizilen nesnelein buyuklukleri yüzde ile belirlenir*/
+    background-color: yellow;
+}
+.kutu1.yeşil{
+    width: 20%;
+    background-color:green;
+}
+.kutu1.kırmızı{
+    width: 30%;
+    background-color: red;
+}
+.kutu1.mavi{
+    width: 10%;
+    background-color:rgb(101, 101, 155);
+}
+.kutu1.mor{
+    width: 100%;
+    background-color: mediumorchid;
+}
+/*float left kullanılıp alt satıra geçtiginde üst satrıla birleşme olursa clearfic kullan bunun için 
+birleşensatıra boş div eklenir asagidaki stillendirme yapılır*/
+.clearfix{
+    clear: both;
+}
