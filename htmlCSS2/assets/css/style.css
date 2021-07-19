@@ -1,0 +1,29 @@
+*{
+    text-align: center;
+}
+h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+}
+.tablo{
+    border: 3px solid grey; /*tablo cercevesi icindeki cizgiler degil*//*dashed cift cizgi double cift cizgi*/
+    border-collapse: collapse;/*cizgileri birlestirir*/
+    width: 50%;/*yuzdelik dilim sayfaya göre hesaplanır*/
+    margin-left: auto;/*soldan hizala*/
+    margin-right: auto;/*sagdan hizala*/ /*sagdan soldan bosluk koyarak nesneler ortaya hizalanır*/
+}
+/*birden fazla attiribute a aynı stillenmdirme kullanacaksa virgülle ayrılarak yazılabilir*/
+th,
+td{
+    border: 4px solid gray;
+}
+th{
+    background-color: yellowgreen;
+}
+tr:hover{ /*satır üzerine gelince renk degissin*/
+    background-color:gray;
+}
+tr:nth-child(even){/* cift sayılardaki tr leri stillendir*/
+    background-color:aqua;
+}
